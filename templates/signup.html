@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block title %} Sign Up {% endblock %} {% block
+content %}
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow-sm p-4">
+      
+      <div>
+        <h3><b>Create Account</b></h3>
+        <p class="text-muted">all details are 100% safe and encypted </p>
+      </div>
+      
+      <form method="post">
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="name"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <!-- Username -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            id="username"
+            placeholder="john_doe"
+            required
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-success">Sign Up</button>
+        </div>
+        <p class="mt-2">Already have an account?
+          <a href="/login">login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

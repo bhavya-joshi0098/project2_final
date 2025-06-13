@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Portfolio Generator{% endblock %}
+{% block content %}
+<div class="container my-5">
+  <h2 class="text-center mb-4">Generate Your Portfolio</h2>
+  <form method="POST">
+    <div class="row">
+      <div class="col-md-6 mb-3"><input class="form-control" name="name" placeholder="Your Name"></div>
+      <div class="col-md-6 mb-3"><input class="form-control" name="title" placeholder="Title (e.g., Web Dev)"></div>
+      <div class="col-md-12 mb-3"><textarea class="form-control" name="intro" placeholder="Intro / Tagline"></textarea></div>
+      <div class="col-md-12 mb-3"><textarea class="form-control" name="about" placeholder="About You"></textarea></div>
+      <div class="col-md-6 mb-3"><textarea class="form-control" name="education" placeholder="Education (e.g., BTech in CSE...)"></textarea></div>
+      <div class="col-md-6 mb-3"><input class="form-control" name="languages" placeholder="Languages Known (comma-separated)"></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="skills" placeholder="Skills (comma-separated)"></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="certifications" placeholder="Certifications (comma-separated)"></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="hobbies" placeholder="Hobbies (comma-separated)"></div>
+      <div class="col-md-12 mb-3"><textarea class="form-control" name="projects" placeholder="Projects (title:desc, ... )"></textarea></div>
+      <div class="col-md-6 mb-3"><textarea class="form-control" name="internships" placeholder="Internships (title:desc)"></textarea></div>
+      <div class="col-md-6 mb-3"><textarea class="form-control" name="experience" placeholder="work Experience (title:desc)"></textarea></div>
+      <div class="col-md-6 mb-3"><textarea class="form-control" name="services" placeholder="Services Offered"></textarea></div>
+      <div class="col-md-6 mb-3"><textarea class="form-control" name="testimonials" placeholder="Testimonials or Quotes"></textarea></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="phone" placeholder="Phone Number"></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="email" placeholder="Email"></div>
+      <div class="col-md-4 mb-3"><input class="form-control" name="location" placeholder="Location"></div>
+      <div class="col-md-12 mb-3"><input class="form-control" name="social" placeholder="Social Links (LinkedIn, GitHub, etc.)"></div>
+    </div>
+    <button class="btn btn-primary w-100" type="submit">Generate Portfolio</button>
+  </form>
+</div>
+{% endblock %}

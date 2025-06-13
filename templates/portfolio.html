@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data.name }} - Portfolio{% endblock %}
+
+{% block content %}
+    {% for section in sections %}
+        {{ section|safe }}
+    {% endfor %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Add any portfolio-specific JavaScript here
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize any portfolio-specific features
+        const profileImg = document.querySelector('.profile-img');
+        if (profileImg) {
+            profileImg.src = "{{ data.avatar_url }}";
+        }
+    });
+</script>
+{% endblock %}
